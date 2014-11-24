@@ -140,7 +140,7 @@
                 <h3>面向对象</h3>
 
                 <p>
-                    JavaScript has strong object-oriented programming capabilities, even though some debates have taken place due to the differences in object-oriented JavaScript compared to other languages.
+                    JavaScript拥有强大的面向对象编程能力, 即便因为其与其它语言在面向对象上的不同而产生了一些争论.
                 </p>
 
                 <p class="source">
@@ -156,7 +156,7 @@
 
                 <p class="source">
                     引自: <a target="_blank" href="http://helephant.com/2008/08/23/javascript-anonymous-functions/">JavaScript anonymous functions</a>, 
-                    译者不负责翻译: <a target="_blank" href="http://isayme.github.io/#javascript-anonymous-functions.html">JavaScript匿名函数</a>.
+                    译者不负责翻译: <a target="_blank" href="http://isayme.github.io/#javascript-anonymous-functions.html">JavaScript匿名函数</a>
                 </p>
 
                 <h3>一等对象: 函数</h3>
@@ -196,18 +196,19 @@
                 <h3>函数绑定</h3>
 
                 <p>
-                    Function binding is most probably the least of your concerns when beginning with JavaScript, but when you realize that you need a solution to the problem of how to keep the context of this within another function, then you might realize that what you actually need is <b>Function.prototype.bind()</b>.
+                    函数绑定很有可能是你刚接触JavaScript时最易忽略的一点,但是当你需要一个解决方案来解决如何在另一个函数中保持this上下文的时候,你才会意识到<b>Function.prototype.bind()</b>的重要性.
                 </p>
 
                 <p class="source">
-                    原文: <a target="_blank" href="http://coding.smashingmagazine.com/2014/01/23/understanding-javascript-function-prototype-bind/">Understanding JavaScript’s Function.prototype.bind</a>
+                    原文: <a target="_blank" href="http://coding.smashingmagazine.com/2014/01/23/understanding-javascript-function-prototype-bind/">Understanding JavaScript’s Function.prototype.bind</a>, 
+                    中文版: <a target="_blank" href="http://blog.jobbole.com/58032/">理解 JavaScript 中的 Function.prototype.bind</a>
                 </p>
 
                 <h3>闭包函数</h3>
 
                 <p>
-                    Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created in.
-        		    It is a important concept to understand as it can be useful during development, like emulating private methods. It can also help to learn how to avoid common mistakes, like creating closures in loops.
+                    闭包是指指向独立变量的函数. 换言之, 定义在闭包内的函数能'记住'所在闭包的上下文环境.
+                    理解闭包的概念重要, 对项目开发有益, 如如何模拟私有方法. 它还能帮助你学会如何避免常见错误, 如在循环体创建闭包该注意什么.
                  </p>
 
                 <p class="source">
@@ -218,7 +219,7 @@
           	    <h3>严格模式</h3>
 
                 <p>
-                    ECMAScript 5's strict mode is a way to opt in to a restricted variant of JavaScript. Strict mode isn't just a subset: it intentionally has different semantics from normal code. Browsers not supporting strict mode will run strict mode code with different behavior from browsers that do, so don't rely on strict mode without feature-testing for support for the relevant aspects of strict mode. Strict mode code and non-strict mode code can coexist, so scripts can opt into strict mode incrementally.
+                    ECMAScript 5的严格模式是JavaScript中的一种限制性更强的变种方式. 严格模式不是一个子集: 它在语义上与正常代码有着特意的差异. 不支持严格模式的浏览器与同支持严格模式的浏览器行为上也不一样, 所以不要在未经严格模式特性测试情况下使用严格模式. 严格模式可以与非严格模式共存, 所以脚本可以逐渐的选择性加入严格模式.                     
                  </p>
 
                 <p class="source">
@@ -226,7 +227,7 @@
                     中文版: <a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Strict_mode">MDN - 严格模式</a>
                 </p>
 
-                <h3>Immediately-Invoked Function Expression (IIFE)</h3>
+                <h3>立即调用函数表达式(IIFE)</h3>
 
                 <p>
                    立即调用函数表达式模式利用JavaScript函数作用域创建了词法作用域. 避免函数内变量提升(hoisting), 防止污染全局作用域环境. 保留内部变量私有的同时还能够访问外部函数.<br/><br/>
