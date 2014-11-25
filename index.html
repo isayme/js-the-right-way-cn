@@ -179,18 +179,19 @@
                     原文: <a target="_blank" href="http://blog.jeremymartin.name/2008/03/understanding-loose-typing-in.html">Understanding Loose Typing in JavaScript</a>
                 </p>
 
-                <h3>作用域与提升</h3>
+                <h3>作用域与变量提升</h3>
 
                 <p>
-                    <b>Scoping:</b> In JavaScript, functions are our <i>de facto</i> scope delimiters for declaring vars, which means that usual blocks from loops and conditionals (such as if, for, while, switch and try) DON'T delimit scope, unlike most other languages. Therefore, those blocks will share the same scope as the function which contains them. This way, it might be dangerous to declare vars inside blocks as it would seem the var belongs to that block only.
+                    <b>作用域:</b> JavaScript只有函数作用域(Function Scoping), 没有块级作用域(Block Scoping). 也就是说循环(for)和条件判断(if)语句块都不会新建作用域, 而是共享所在函数的作用域. 在语句块内声明变量要慎重, 因为其它语句块同样可以访问那些变量.
                 </p>
 
                 <p>
-                    <b>Hoisting:</b> On runtime, all var and function declarations are moved to the beginning of each function (its scope) - this is known as Hoisting. Having said so, it is a good practice to declare all the vars altogether on the first line, in order to avoid false expectations with a var that got declared late but happened to hold a value before - this is a common problem for programmers coming from languages with block scope.
+                    <b>变量提升:</b> 运行时, 所有变量和函数声明都会被提升到函数最开始处(即所在作用域顶部) - 这特性称为 变量提升(Hoisting). 因此最好将所有变量声明都放在函数最开始处, 因为如果放在后面声明, 有块级作用域编程经验的人常搞不清声明前变量的值到底是什么.
                 </p>
 
                 <p class="source">
-                    原文: <a target="_blank" href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">JavaScript Scoping and Hoisting</a>
+                    原文: <a target="_blank" href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">JavaScript Scoping and Hoisting</a>, 
+                    justjavac的翻译: <a target="_blank" href="http://justjavac.iteye.com/blog/1886140">Javascript 作用域和变量提升</a>
                 </p>
 
                 <h3>函数绑定</h3>
